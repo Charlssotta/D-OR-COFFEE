@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log In</title>
+<link rel = "icon" type="image/x-icon" href ="photo.png">
+<style>
+body {
+
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      align-items: middle;
+      align-items: center;
+      background:url(home-img.jpeg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .container h2 {
+      text-align: center;
+      color: ghostwhite;
+      margin-bottom: 20px;
+    }
+    .container label {
+      display: black;
+      margin-bottom: 10px;
+    }
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  }
+</style>
+<script>
+  function LogInfunction(){
+    let user1 = "Admin", user1psswrd ="123";
+    if(username.value== user1 && password.value==user1psswrd){
+      window.location.href='DOR COFFEE.html';
+    }
+    else{
+      alert('Invalid Username or Password');
+    }
+  }
+</script>
+</head>
+
+<body><center>
+  <div class="container">
+     <h2>Login</h2>
+    <center>
+  <input type="text" id="username" placeholder="Username"/>
+   <input type="text" id="password" placeholder="Password"/>
+   <input type="submit" value="Log In" onclick="LogInfunction()"/>
+  
+    </center>
+  </div>
+  </center>
+</body>
+</html>
